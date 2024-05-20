@@ -11,8 +11,4 @@ public class HealthCheckController {
         return "Status OK";
     }
 
-    @GetMapping("/")
-    public String home() {
-        return "Welcome to the Spring Boot Application!";
-    }
 }
