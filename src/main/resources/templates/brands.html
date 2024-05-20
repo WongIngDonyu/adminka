@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Бренды</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Список брендов</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Модели</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="brand : ${brands}">
+        <td th:text="${brand.name}">Brand Name</td>
+        <td>
+            <span th:each="model : ${brand.models}" th:text="${model.name}">Model Name</span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
